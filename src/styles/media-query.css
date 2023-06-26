@@ -1,0 +1,44 @@
+#media div {
+  padding: 20px;
+}
+
+#media div:nth-child(1) {
+  background-color: red;
+}
+
+#media div:nth-child(2) {
+  background-color: green;
+}
+
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+
+/* Small devices (landscape phones, 576px and up) it's saying if at mid-width of 576...do something*/
+@media (min-width: 576px) {
+  #media div:nth-child(1) {
+    background-color:black;
+    text-align: center;
+    color: white;
+  } 
+  #media div:nth-child(2) {
+    background-color:red;
+  } 
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #media div:nth-child(1) {
+    background-color:yellowk;
+    border: 20px dotted yellow
+  } 
+  #media div:nth-child(2) {
+    text-align: start;
+    background-color:goldenrod;
+  } 
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
